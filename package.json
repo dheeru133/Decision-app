@@ -10,19 +10,11 @@
     "serve": "live-server public/",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
-    "build-babel":
-      "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
-    "dev-server": "webpack-dev-server"
+    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
+    "dev-server": "webpack-dev-server",
+    "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
-    "@types/express": "^4.11.1",
-    "@types/node-sass": "^3.10.32",
-    "@types/react": "^16.0.39",
-    "@types/react-dom": "^16.0.4",
-    "@types/react-modal": "^3.1.2",
-    "@types/validator": "^6.3.0",
-    "@types/webpack": "^3.8.8",
-    "@types/webpack-dev-server": "^2.9.3",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.3",
