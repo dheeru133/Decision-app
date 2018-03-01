@@ -5,13 +5,17 @@
   "author": "Dheeraj Chaudhary",
   "license": "MIT",
   "scripts": {
+    "start": "node server/server.js",
     "prettier-watch": "onchange '**/*.jsx' -- prettier --write {{changed}}",
     "serve": "live-server public/",
-    "build": "webpack",
-    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
+    "build-babel":
+      "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
     "dev-server": "webpack-dev-server"
   },
   "dependencies": {
+    "@types/express": "^4.11.1",
     "@types/node-sass": "^3.10.32",
     "@types/react": "^16.0.39",
     "@types/react-dom": "^16.0.4",
@@ -26,6 +30,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.10",
+    "express": "^4.16.2",
     "live-server": "^1.2.0",
     "node-sass": "^4.7.2",
     "normalize.css": "^8.0.0",
