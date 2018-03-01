@@ -13,7 +13,7 @@
     "build-babel":
       "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
     "dev-server": "webpack-dev-server",
-    "heroku-postbuild": "npm run build:prod"
+    "post_build": "npm run build:prod"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
