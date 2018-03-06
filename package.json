@@ -10,10 +10,10 @@
     "serve": "live-server public/",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
-    "build-babel":
-      "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
+    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
     "dev-server": "webpack-dev-server",
-    "post_build": "npm run build:prod"
+    "post_build": "npm run build:prod",
+    "heroku-postbuild": "npm run build:prod"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
@@ -22,9 +22,11 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "bower": "^1.8.2",
     "css-loader": "^0.28.10",
     "express": "^4.16.2",
     "live-server": "^1.2.0",
+    "node-sass": "^4.7.2",
     "normalize.css": "^8.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
