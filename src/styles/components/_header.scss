@@ -1,0 +1,28 @@
+/*
+ * @Author: Dheeraj Chaudhary 
+ * @Date: 2018-03-08 11:28:28 
+ * @Last Modified by: Dheeraj.Chaudhary@contractor.hallmark.com
+ * @Last Modified time: 2018-03-08 14:52:07
+ */
+//BEM - block Element Modifier
+.header {
+  background: $off-black;
+  margin-bottom: $xl-size;
+  //   margin-top: $m-size;
+  padding: $m-size;
+  color: $antique-white;
+  box-shadow: $shadow-box;
+  border: none;
+  border-top: 0.6rem solid darken($purple, 10%);
+}
+
+.header__title {
+  font-size: $l-size;
+  margin: 0;
+}
+.header__subtitle {
+  font-size: $m-size;
+  margin: 0;
+  font-weight: 500;
+  color: $off-white;
+}

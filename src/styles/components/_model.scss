@@ -1,0 +1,43 @@
+/*
+ * @Author: Dheeraj Chaudhary 
+ * @Date: 2018-03-08 16:46:13 
+ * @Last Modified by: Dheeraj.Chaudhary@contractor.hallmark.com
+ * @Last Modified time: 2018-03-08 17:06:21
+ */
+
+.ReactModalPortal > div {
+  opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: opacity 100ms ease-in-out;
+}
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.modal {
+  background: $light-blue;
+  color: $off-white;
+  max-width: 30rem;
+  outline: none;
+  padding: $xl-size;
+  text-align: center;
+}
+
+.modal__title {
+  margin: 0 0 $m-size o;
+}
+.modal__body {
+  margin: 0 0 $m-size o;
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,37 @@
+/*
+ * @Author: Dheeraj Chaudhary 
+ * @Date: 2018-03-08 14:07:09 
+ * @Last Modified by: Dheeraj.Chaudhary@contractor.hallmark.com
+ * @Last Modified time: 2018-03-08 14:50:34
+ */
+.big-button {
+  background: $purple;
+  border: none;
+  border-bottom: 0.6rem solid darken($purple, 10%);
+  font-weight: bold;
+  font-size: $l-size;
+  width: 100%;
+  color: white;
+  margin-bottom: $xl-size;
+  padding: 2.4rem;
+}
+
+.big-button:disabled {
+  opacity: 0.5;
+}
+
+.button {
+  background: $purple;
+  border: none;
+  border-bottom: 0.3rem solid darken($purple, 10%);
+  color: white;
+  font-weight: 500;
+  padding: $s-size;
+}
+
+.button--link {
+  background: none;
+  border: none;
+  color: $off-white;
+  padding: 0;
+}

@@ -1,0 +1,26 @@
+/*
+ * @Author: Dheeraj Chaudhary 
+ * @Date: 2018-03-08 16:32:24 
+ * @Last Modified by: Dheeraj.Chaudhary@contractor.hallmark.com
+ * @Last Modified time: 2018-03-08 16:41:43
+ */
+
+.add-option {
+  display: flex;
+  padding: $m-size;
+}
+.add-option-error {
+  color: rgb(238, 111, 111);
+  font-style: italic;
+  padding: 0 $m-size;
+  margin: $m-size 0 0 0;
+}
+.add-option__input {
+  flex-grow: 1;
+  background: $dark-blue;
+  border: none;
+  border-bottom: 0.3rem solid darken($dark-blue, 10%);
+  margin-right: $s-size;
+  color: $off-white;
+  padding: $s-size;
+}
