@@ -2,11 +2,12 @@
  * @Author: Dheeraj Chaudhary 
  * @Date: 2018-03-08 16:32:24 
  * @Last Modified by: Dheeraj.Chaudhary@contractor.hallmark.com
- * @Last Modified time: 2018-03-08 16:41:43
+ * @Last Modified time: 2018-03-08 23:59:48
  */
 
 .add-option {
   display: flex;
+  flex-direction: column;
   padding: $m-size;
 }
 .add-option-error {
@@ -20,7 +21,18 @@
   background: $dark-blue;
   border: none;
   border-bottom: 0.3rem solid darken($dark-blue, 10%);
-  margin-right: $s-size;
+  margin: 0 0 $s-size 0;
+  //   margin-right: $s-size;
   color: $off-white;
   padding: $s-size;
+  word-break: break-all;
+}
+
+@media (min-width: 45rem) {
+  .add-option {
+    flex-direction: row;
+  }
+  .add-option__input {
+    margin: 0 $s-size 0 0;
+  }
 }

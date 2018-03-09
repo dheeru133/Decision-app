@@ -2,7 +2,7 @@
  * @Author: Dheeraj Chaudhary 
  * @Date: 2018-03-08 16:46:13 
  * @Last Modified by: Dheeraj.Chaudhary@contractor.hallmark.com
- * @Last Modified time: 2018-03-08 17:06:21
+ * @Last Modified time: 2018-03-08 23:41:31
  */
 
 .ReactModalPortal > div {
@@ -37,6 +37,7 @@
 .modal__body {
   margin: 0 0 $m-size o;
   font-size: 2rem;
+  word-break: break-all;
   font-weight: 300;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
